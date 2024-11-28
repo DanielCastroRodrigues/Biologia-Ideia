@@ -13,3 +13,15 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
+
+function openFullscreen(img) {
+    const fullscreen = document.getElementById('fullscreen');
+    const fullscreenImg = document.getElementById('fullscreen-img');
+    fullscreenImg.src = img.src;
+    fullscreen.style.display = 'flex';
+}
+
+function closeFullscreen() {
+    const fullscreen = document.getElementById('fullscreen');
+    fullscreen.style.display = 'none';
+}
